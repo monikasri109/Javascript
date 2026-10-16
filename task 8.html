@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="task 8.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Movie Ticket Booking</h1>
+      <p>Choose a movie and book your tickets.</p>
+    </div>
+
+    <button id="themeButton" type="button">Change Colour</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Available Movies</h2>
+      <ul>
+        <li>Inception — ₹150</li>
+        <li>The Lion King — ₹120</li>
+        <li>Avengers Endgame — ₹180</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Book Your Tickets</h2>
+
+      <form id="bookingForm">
+        <label for="movie">Select movie:</label>
+        <select id="movie" required>
+          <option value="">Choose a movie</option>
+          <option value="Inception" data-price="150">Inception — ₹150</option>
+          <option value="The Lion King" data-price="120">The Lion King — ₹120</option>
+          <option value="Avengers Endgame" data-price="180">Avengers Endgame — ₹180</option>
+        </select>
+
+        <label for="showtime">Select show time:</label>
+        <select id="showtime" required>
+          <option value="">Choose a time</option>
+          <option>10:00 AM</option>
+          <option>1:30 PM</option>
+          <option>5:00 PM</option>
+          <option>8:30 PM</option>
+        </select>
+
+        <label for="email">Email address:</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+
+        <label for="tickets">Number of tickets:</label>
+        <input id="tickets" type="number" min="1" max="10" value="1" required>
+
+        <p>Total price: <strong id="totalPrice">₹0</strong></p>
+
+        <button type="submit">Book Tickets</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <section>
+      <h2>Your Booking</h2>
+      <div id="bookingDetails">No booking yet.</div>
+    </section>
+  </main>
+
+  <script src="task 8.js"></script>
+</body>
+</html>

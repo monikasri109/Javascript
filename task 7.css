@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f3f4fb;
+  color: #20264b;
+}
+
+#changeColorButton{
+    background-color: #7357e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  margin: 10px 0;
+  padding: 12px;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.done {
+  text-decoration: line-through;
+  color: green;
+}
